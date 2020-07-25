@@ -38,7 +38,8 @@ namespace WebApplication2
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<AppDbContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("AppDbContext")));
+                    //options.UseSqlServer(Configuration.GetConnectionString("AppDbContext"))); //this option is to run in local Server
+                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));  // this option is to run in Azure Webserver
 
             services.AddSwaggerGen(c =>
             {
