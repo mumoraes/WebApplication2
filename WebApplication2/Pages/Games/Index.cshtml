@@ -5,10 +5,11 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2>Check Out What We Have For You!</h2>
+<br />
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a class="btn btn-outline-primary" asp-page="Create" class="btn btn-info navbar-btn">Create New One</a>
 </p>
 <table class="table">
     <thead>
@@ -44,9 +45,9 @@
                 @Html.DisplayFor(modelItem => item.MaximumPlayers)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a class="btn btn-info" asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a class="btn btn-danger" asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }

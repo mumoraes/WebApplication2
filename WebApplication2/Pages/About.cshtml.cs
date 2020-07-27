@@ -12,7 +12,7 @@ namespace WebApplication2.Pages
 
         public void OnGet()
         {
-            Message = "Your application description page.";
+            Message = "More About Us!";
         }
     }
 }

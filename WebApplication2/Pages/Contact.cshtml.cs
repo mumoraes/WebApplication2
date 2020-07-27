@@ -12,7 +12,7 @@ namespace WebApplication2.Pages
 
         public void OnGet()
         {
-            Message = "Your contact page.";
+            Message = "Contact Us!";
         }
     }
 }

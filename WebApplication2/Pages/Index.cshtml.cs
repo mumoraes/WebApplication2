@@ -10,11 +10,11 @@ namespace WebApplication2.Pages
 {
     public class IndexModel : PageModel
     {
-        public string Time { get; set; }
-        
+        public string Date { get; set; }
+           
         public void OnGet()
         {
-            Time = DateTime.Now.ToShortTimeString();
+            Date = DateTime.Now.ToString();
         }
     }
 }
